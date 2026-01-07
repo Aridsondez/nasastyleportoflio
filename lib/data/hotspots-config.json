@@ -1,0 +1,64 @@
+{
+  "hotspots": [
+    {
+      "id": "experience",
+      "position": [0.09, 2.5, 0.3],
+      "label": "EXPERIENCES",
+      "size": {
+        "width": "330px",
+        "height": "200px"
+      },
+      "content": [
+        "NextEra Energy x Everbright | Software Engineer Intern",
+        "Shipped Solar Year in Review to 30,000+ homeowners",
+        "React Native + Django + PostgreSQL + AWS SQS",
+        "Improved load times 75%: 8.5s → 2.1s",
+        "99.9% uptime | 45% engagement increase",
+        "",
+        "Luro (YC-track) | Co-Founder & Backend Engineer",
+        "AI-powered Twitch assistant | 10,000+ concurrent users",
+        "FastAPI + Node.js + PostgreSQL + pgvector + Redis",
+        "5s end-to-end latency | 95% retrieval accuracy",
+        "",
+        "Jacobs | Data Engineer / Software Engineer",
+        "React telemetry dashboard for 3 engineering teams",
+        "Flask + C++ + PostgreSQL | 50,000+ readings/hour",
+        "Diagnostic time: 45min → 15min (67% reduction)"
+      ]
+    },
+    {
+      "id": "projects",
+      "position": [0.09, 1.14, 0.3],
+      "label": "PROJECTS",
+      "size": {
+        "width": "250px",
+        "height": "220px"
+      },
+      "content": [
+        "SQS-Lite | AWS SQS Clone in Go",
+        "10,000+ msg/s throughput | 99.95% availability",
+        "PostgreSQL persistence | Docker + Prometheus",
+        "",
+        "CortexSearch | Semantic File Search Engine",
+        "100,000+ documents indexed | C++ + pgvector",
+        "Sub-200ms latency | 35% relevance improvement",
+        "",
+        "YouTube Health Detector | Hackathon Winner",
+        "87% accuracy | FastAPI + React + LLMs",
+        "Process 60min video in <3 minutes"
+      ]
+    },
+    {
+      "id": "about",
+      "position": [-1.18, 0.87, 0.3],
+      "label": "ABOUT ME",
+      "size": {
+        "width": "80px",
+        "height": "80px"
+      },
+      "content": [
+        ""
+      ]
+    }
+  ]
+}

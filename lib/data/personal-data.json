@@ -1,0 +1,384 @@
+{
+  "personal": {
+    "name": "Aridsondez Jerome",
+    "title": "Software Engineer",
+    "specialization": "Full-Stack & Backend Development",
+    "location": "Orlando, Florida",
+    "email": "workaridsondez@gmail.com",
+    "phone": "954-588-9476",
+    "linkedin": "linkedin.com/in/aridsondez-jerome",
+    "github": "github.com/aridsondez",
+    "graduationDate": "May 2026",
+    "university": "University of Central Florida",
+    "degree": "Bachelor of Science in Computer Science",
+    "leadership": "Parliamentarian, National Society of Black Engineers (NSBE)",
+    "status": "ACTIVE",
+    "clearanceLevel": "UNCLASSIFIED",
+    "missionStatus": "OPERATIONAL"
+  },
+  "education": {
+    "institution": "University of Central Florida",
+    "location": "Orlando, Florida",
+    "degree": "Bachelor of Science in Computer Science",
+    "graduation": "May 2026",
+    "leadership": ["Parliamentarian, National Society of Black Engineers (NSBE)"],
+    "relevantCoursework": [
+      "Data Structures & Algorithms",
+      "Distributed Systems",
+      "Databases",
+      "Operating Systems",
+      "Computer Architecture",
+      "AI",
+      "Mobile Development"
+    ]
+  },
+  "experience": [
+    {
+      "id": "nextera",
+      "company": "NextEra Energy x Everbright",
+      "role": "Software Engineer, Intern",
+      "period": "May 2025 - August 2025",
+      "location": "San Francisco, CA",
+      "type": "INTERNSHIP",
+      "clearance": "PUBLIC",
+      "summary": "Architected and shipped 'Solar Year in Review' analytics pipeline serving 30,000+ users",
+      "achievements": [
+        "Shipped 'Solar Year in Review' to 30,000+ homeowners, delivering personalized annual solar analytics through React Native mobile app and Django REST backend with PostgreSQL and AWS SQS for async data processing",
+        "Built end-to-end feature including React Native UI with interactive charts and energy insights, backend pipeline processing 12 months of telemetry per user, and monitoring to maintain 99.9% uptime",
+        "Improved user engagement by 45% through responsive mobile interface with real-time visualizations, reducing dashboard load times from 8.5s to 2.1s via database optimization and caching",
+        "Architected Python Django REST backend with PostgreSQL for time-series solar telemetry aggregation and AWS SQS for decoupled async job processing",
+        "Owned end-to-end implementation of asynchronous task queue processing 12 months of per-customer telemetry data, optimizing batch queries and database indexing to achieve 3.2s p95 latency and 99.9% uptime",
+        "Instrumented production systems with Datadog APM to expose critical path bottlenecks in Django ORM queries and background workers, reducing query execution time from 8.5s to 2.1s through materialized views and connection pooling",
+        "Collaborated with PMs and designers in Agile sprints to align product roadmap with user retention and engagement KPIs, iterating on designs based on user feedback"
+      ],
+      "techStack": ["Python", "Django", "React Native", "PostgreSQL", "AWS SQS", "Datadog", "Docker"],
+      "metrics": {
+        "users": "30,000+",
+        "uptime": "99.9%",
+        "performanceImprovement": "75% (8.5s → 2.1s)",
+        "engagementIncrease": "45%",
+        "latency": "3.2s p95"
+      }
+    },
+    {
+      "id": "luro",
+      "company": "Luro",
+      "companyType": "YC-track Startup",
+      "role": "Co-Founder & Backend Engineer",
+      "period": "January 2025 - Present",
+      "location": "Orlando, FL",
+      "type": "STARTUP",
+      "clearance": "CONFIDENTIAL",
+      "summary": "Building AI-powered Twitch assistant delivering real-time contextual answers with 5s latency",
+      "achievements": [
+        "Building AI-powered Twitch assistant delivering real-time contextual answers with 5s latency, combining React admin dashboard, Node.js WebSocket server, and FastAPI backend with vector search",
+        "Developed full-stack platform handling 10,000+ concurrent users, implementing memory system with PostgreSQL and Redis for session management, chat history, and personalized AI responses",
+        "Created React analytics dashboard reducing operational overhead by 60%, enabling real-time monitoring of user engagement, query patterns, and system health metrics",
+        "Built real-time AI Twitch assistant backend processing 10,000+ concurrent WebSocket connections, architecting Node.js event loop for chat ingestion and FastAPI microservice for video transcription, embedding generation, and vector search",
+        "Designed two-tier memory system combining PostgreSQL + pgvector for long-term semantic retrieval and Redis for session state and rate limiting, achieving 5s end-to-end query latency through optimized cosine similarity search and hot-path caching",
+        "Implemented streaming data pipeline with async Python workers summarizing 2-minute video segments via LLM, storing embeddings in pgvector index with 95% retrieval accuracy on contextual queries"
+      ],
+      "techStack": ["Python", "FastAPI", "Node.js", "React", "PostgreSQL", "pgvector", "Redis", "WebSocket", "Docker"],
+      "metrics": {
+        "latency": "5s end-to-end",
+        "retrievalAccuracy": "95%",
+        "operationalOverheadReduction": "60%"
+      }
+    },
+    {
+      "id": "jacobs",
+      "company": "Jacobs",
+      "role": "Data Engineer / Software Engineer",
+      "period": "August 2024 - January 2025",
+      "location": "Orlando, FL",
+      "type": "CONTRACT",
+      "clearance": "PUBLIC",
+      "summary": "Built real-time telemetry dashboard and data processing pipeline for water filtration systems",
+      "achievements": [
+        "Built React telemetry dashboard for 3 engineering teams, visualizing real-time sensor data from water filtration systems and reducing diagnostic time by 30% through interactive time-series charts",
+        "Developed Flask API and data processing pipeline handling 50,000+ sensor readings/hour, improving system efficiency by 15% through automated anomaly detection and alerts",
+        "Designed full-stack analytics platform enabling faster decision-making across teams, reducing mean time to identify system issues from 45 minutes to 15 minutes",
+        "Built Flask REST API exposing real-time sensor metrics from water filtration systems, designing normalized PostgreSQL schema and implementing row-level locking for concurrent writes from 3 engineering teams",
+        "Engineered C++ data validation pipeline processing 50,000+ sensor readings/hour, implementing moving average filters and outlier detection with 98% precision, reducing false positive alerts by 65%",
+        "Optimized telemetry ingestion system to reduce diagnostic latency from 45 minutes to 15 minutes, redesigning database indexes and introducing time-series partitioning for historical data queries"
+      ],
+      "techStack": ["React", "Flask", "C++", "PostgreSQL", "Python"],
+      "metrics": {
+        "readingsPerHour": "50,000+",
+        "diagnosticTimeReduction": "67% (45min → 15min)",
+        "precision": "98%",
+        "falsePositiveReduction": "65%",
+        "teams": "3"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "sqs-lite",
+      "name": "SQS-Lite",
+      "subtitle": "AWS SQS Clone",
+      "status": "ACTIVE",
+      "classification": "OPEN SOURCE",
+      "period": "August 2025 - Present",
+      "description": "Distributed message queue in Go with PostgreSQL as persistence layer, implementing at-least-once delivery semantics",
+      "summary": "A Go-based distributed message queue implementing AWS SQS semantics with PostgreSQL as the persistence layer",
+      "achievements": [
+        "Designing distributed message queue in Go with PostgreSQL as persistence layer, implementing at-least-once delivery semantics through visibility timeout, exponential backoff retries, and dead-letter queue handling",
+        "Built REST API for enqueue/dequeue/ack operations with PostgreSQL row-level locking and optimistic concurrency control, achieving 10,000+ msg/s throughput through goroutine-based concurrent consumers and connection pooling",
+        "Instrumented system with Prometheus for queue depth, processing rate, and DLQ metrics, implementing Docker health checks and auto-recovery to maintain 99.95% availability under simulated failure scenarios"
+      ],
+      "features": [
+        "At-least-once delivery semantics",
+        "Visibility timeout & exponential backoff",
+        "Dead-letter queue handling",
+        "PostgreSQL row-level locking",
+        "Optimistic concurrency control",
+        "Goroutine-based concurrent consumers",
+        "Prometheus monitoring",
+        "Docker health checks and auto-recovery"
+      ],
+      "techStack": ["Go", "PostgreSQL", "Docker", "Prometheus"],
+      "metrics": {
+        "throughput": "10,000+ msg/s",
+        "availability": "99.95%"
+      },
+      "github": "https://github.com/Aridsondez/AWS-SQS-LITE",
+      "tags": ["Distributed Systems", "Message Queue", "Backend", "Go"]
+    },
+    {
+      "id": "cortex-search",
+      "name": "CortexSearch",
+      "subtitle": "Semantic File Search Engine",
+      "status": "LIVE",
+      "classification": "OPEN SOURCE",
+      "period": "January 2025 - September 2025",
+      "description": "Semantic file search engine in C++ combining metadata filtering, full-text search, and vector similarity",
+      "summary": "High-performance semantic search engine combining traditional and vector search for intelligent document retrieval",
+      "achievements": [
+        "Built a semantic file search engine in C++ combining metadata filtering, full-text search, and vector similarity search to enable relevance-based retrieval across 100,000+ indexed documents",
+        "Integrated PostgreSQL full-text search with pgvector-based similarity queries, fusing keyword and embedding results to improve retrieval relevance by 35% over keyword-only baselines",
+        "Implemented a multithreaded producer–consumer pipeline for document ingestion and embedding generation, batching workloads to reduce average document processing time to 2.5s per file",
+        "Optimized query execution paths and indexing strategy to achieve sub-200ms top-k retrieval latency under local workloads"
+      ],
+      "features": [
+        "Metadata filtering",
+        "Full-text search",
+        "Vector similarity search",
+        "Multithreaded pipeline",
+        "Document embedding generation",
+        "Hybrid search fusion"
+      ],
+      "techStack": ["C++", "PostgreSQL", "pgvector"],
+      "metrics": {
+        "documents": "100,000+",
+        "relevanceImprovement": "35%",
+        "processingTime": "2.5s per file",
+        "latency": "sub-200ms"
+      },
+      "github": "https://github.com/Aridsondez/CortextSearch",
+      "tags": ["Search Engine", "Vector Search", "C++", "AI/ML"]
+    },
+    {
+      "id": "youtube-health-detector",
+      "name": "YouTube Health-Misinformation Detector",
+      "subtitle": "AI-Powered Fact Checker",
+      "status": "COMPLETED",
+      "classification": "HACKATHON PROJECT",
+      "period": "FIU ShellHacks 2025",
+      "award": "Hackathon Winner",
+      "description": "Full-stack AI tool detecting health misinformation in videos with 87% accuracy",
+      "summary": "AI-powered tool for detecting and flagging health misinformation in YouTube videos",
+      "achievements": [
+        "Built full-stack AI tool detecting health misinformation in videos, featuring React dashboard with interactive timeline for flagged claims, FastAPI backend for transcription and fact-checking, and LLM-based verification with 87% accuracy",
+        "Delivered end-to-end feature processing 60-minute videos in under 3 minutes, displaying confidence scores, citations, and 1-click navigation to flagged segments"
+      ],
+      "features": [
+        "Video transcription",
+        "AI-powered fact checking",
+        "Interactive timeline",
+        "Confidence scoring",
+        "Citation system",
+        "Segment navigation"
+      ],
+      "techStack": ["FastAPI", "React", "Docker", "LLMs", "Python"],
+      "metrics": {
+        "accuracy": "87%",
+        "processingTime": "3 minutes for 60-minute video"
+      },
+      "tags": ["AI/ML", "Healthcare", "NLP", "Hackathon"]
+    },
+    {
+      "id": "fren-com",
+      "name": "FREN.com",
+      "subtitle": "Cars.com Clone",
+      "status": "COMPLETED",
+      "classification": "PERSONAL PROJECT",
+      "period": "July 2024 - October 2024",
+      "description": "Full-stack car marketplace with automated web scraping",
+      "summary": "Full-stack car marketplace platform with search, filters, and automated listing updates",
+      "achievements": [
+        "Developed full-stack car marketplace with React frontend and Flask backend, featuring search, filters, and pagination for 10,000+ listings",
+        "Built automated web scraping pipeline updating 500+ listings daily with 95% accuracy, reducing load times by 10% through optimized component architecture and API design"
+      ],
+      "features": [
+        "Search and filters",
+        "Pagination",
+        "Automated web scraping",
+        "Real-time updates",
+        "Optimized performance"
+      ],
+      "techStack": ["React", "Flask", "SQLite", "Python"],
+      "metrics": {
+        "listings": "10,000+",
+        "dailyUpdates": "500+",
+        "accuracy": "95%",
+        "loadTimeImprovement": "10%"
+      },
+      "tags": ["Full Stack", "Web Scraping", "E-commerce"]
+    },
+    {
+      "id": "satellite-vpp",
+      "name": "Satellite VPP",
+      "subtitle": "Decentralized Energy Trading Platform",
+      "status": "COMPLETED",
+      "classification": "HACKATHON PROJECT",
+      "period": "MDC Hackathon 2025",
+      "award": "Won Best Use of Solana",
+      "description": "Decentralized energy trading platform with blockchain integration",
+      "summary": "Blockchain-based virtual power plant platform for decentralized energy distribution",
+      "achievements": [
+        "Shipped decentralized energy trading platform featuring React dashboard with 3D satellite visualization, improving user comprehension of energy distribution by 65%",
+        "Built Flask backend with dynamic pricing engine and Solana blockchain integration, processing 500+ transactions/hour with sub-500ms response times",
+        "Engineered event-driven Flask backend for decentralized energy trading, implementing dynamic pricing algorithm and Solana Devnet integration to process 500+ blockchain transactions/hour with sub-500ms API latency",
+        "Architected RESTful endpoints for real-time pricing updates across distributed network of 50+ nodes, reducing average response time from 200ms to 50ms through async request handling and database query batching"
+      ],
+      "features": [
+        "3D satellite visualization",
+        "Dynamic pricing engine",
+        "Solana blockchain integration",
+        "Real-time pricing updates",
+        "Event-driven architecture"
+      ],
+      "techStack": ["React", "Flask", "Three.js", "Solana", "PostgreSQL", "Python"],
+      "metrics": {
+        "transactionsPerHour": "500+",
+        "latency": "sub-500ms",
+        "nodes": "50+",
+        "responseTime": "50ms (from 200ms)",
+        "comprehensionImprovement": "65%"
+      },
+      "github": "https://github.com/Aridsondez/Hackathon-MDC-Satellite-VP",
+      "tags": ["Blockchain", "Energy", "3D Visualization", "Hackathon"]
+    },
+    {
+      "id": "habla-plus",
+      "name": "Habla+",
+      "subtitle": "Language Learning App",
+      "status": "COMPLETED",
+      "classification": "COURSE PROJECT",
+      "period": "January 2025 - April 2025",
+      "description": "Collaborative language learning platform with 3D game world",
+      "summary": "Gamified language learning platform with multiplayer 3D world",
+      "achievements": [
+        "Developed collaborative learning platform with React web app and 3D game world using Three.js, supporting 500+ concurrent users with Node.js backend for real-time multiplayer features",
+        "Built responsive UI components improving mobile retention by 38%, implemented authentication and progress tracking with MongoDB"
+      ],
+      "features": [
+        "3D game world",
+        "Real-time multiplayer",
+        "Authentication system",
+        "Progress tracking",
+        "Responsive UI"
+      ],
+      "techStack": ["TypeScript", "React", "Three.js", "Node.js", "MongoDB"],
+      "metrics": {
+        "concurrentUsers": "500+",
+        "mobileRetention": "38% improvement"
+      },
+      "tags": ["Education", "3D", "Real-time", "Multiplayer"]
+    }
+  ],
+  "skills": {
+    "languages": {
+      "expert": ["Python", "JavaScript", "TypeScript", "SQL"],
+      "proficient": ["Go", "C++", "C"],
+      "familiar": ["Java", "Rust"]
+    },
+    "frontend": {
+      "frameworks": ["React", "React Native", "Three.js"],
+      "technologies": ["HTML", "CSS", "Tailwind CSS", "TypeScript"]
+    },
+    "backend": {
+      "frameworks": ["Django", "Flask", "FastAPI", "Node.js", "Express"],
+      "databases": ["PostgreSQL", "MongoDB", "Redis", "SQLite", "pgvector"],
+      "concepts": ["REST APIs", "WebSockets", "Microservices", "Event-driven Architecture"]
+    },
+    "cloud": {
+      "aws": ["SQS", "S3", "EC2"],
+      "tools": ["Docker", "GCP", "Vercel"],
+      "monitoring": ["Prometheus", "Datadog"]
+    },
+    "systems": {
+      "concepts": ["Distributed Systems", "Message Queues", "Real-time Systems", "Data Pipelines"],
+      "tools": ["Linux", "Git", "CI/CD"]
+    },
+    "aiml": {
+      "technologies": ["LLMs", "Vector Search", "Embeddings", "NLP"],
+      "tools": ["OpenAI API", "pgvector"]
+    }
+  },
+  "technicalSkills": {
+    "frontend": "React, React Native, TypeScript, JavaScript, Three.js, HTML/CSS, Tailwind CSS",
+    "backend": "Python (Django, Flask, FastAPI), Node.js, Go, C++, SQL, PostgreSQL, MongoDB, Redis, pgvector",
+    "tools": "Git, Docker, AWS (SQS, S3, EC2), GCP, Linux, REST APIs, WebSockets, Prometheus, Datadog"
+  },
+  "quickStats": {
+    "experience": "NextEra Energy, NSBE Parliamentarian, Jacobs",
+    "specialization": "Full-Stack & Backend Development",
+    "activeProjects": "3",
+    "hackathons": "15+",
+    "graduationCountdown": "May 2026"
+  },
+  "funFacts": [
+    {
+      "label": "Hackathons Survived",
+      "value": "15+"
+    },
+    {
+      "label": "Lines of Code",
+      "value": "Too many to count"
+    },
+    {
+      "label": "Favorite Stack",
+      "value": "Go + PostgreSQL"
+    },
+    {
+      "label": "Coffee Consumed",
+      "value": "∞"
+    },
+    {
+      "label": "Days to Graduation",
+      "value": "Calculating..."
+    },
+    {
+      "label": "Current Mission",
+      "value": "Building SQS-Lite"
+    },
+    {
+      "label": "Sleep Schedule",
+      "value": "What's that?"
+    },
+    {
+      "label": "Leadership",
+      "value": "NSBE Parliamentarian"
+    }
+  ],
+  "contact": {
+    "email": "workaridsondez@gmail.com",
+    "phone": "954-588-9476",
+    "linkedin": "https://linkedin.com/in/aridsondez-jerome",
+    "github": "https://github.com/aridsondez",
+    "location": "Orlando, Florida",
+    "availability": "May 2026"
+  }
+}

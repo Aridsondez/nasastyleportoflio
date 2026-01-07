@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --terminal-green: #00ff41;
+  --terminal-green-dim: #00cc33;
+  --terminal-green-dark: #008822;
+  --cyber-blue: #00d9ff;
+  --cyber-blue-dim: #00a8cc;
+  --deep-black: #000000;
+  --console-bg: #0a0a0a;
+  --panel-bg: #0f0f0f;
+  --panel-border: #1a1a1a;
+  --text-primary: #00ff41;
+  --text-secondary: #00cc33;
+  --text-dim: #008822;
+  --text-accent: #00d9ff;
+  --warning-amber: #ffaa00;
+  --error-red: #ff0055;
+  --classified-red: #ff0000;
+}
+
+@layer base {
+  body {
+    @apply bg-deep-black text-terminal-green antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-orbitron;
+  }
+}
+
+@layer components {
+  .monitor-glow {
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.5),
+                0 0 20px rgba(0, 255, 65, 0.3),
+                0 0 30px rgba(0, 255, 65, 0.1);
+  }
+
+  .monitor-glow-blue {
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.5),
+                0 0 20px rgba(0, 217, 255, 0.3),
+                0 0 30px rgba(0, 217, 255, 0.1);
+  }
+
+  .crt-effect {
+    position: relative;
+  }
+
+  .crt-effect::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(
+      rgba(18, 16, 16, 0) 50%,
+      rgba(0, 0, 0, 0.25) 50%
+    );
+    background-size: 100% 4px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .typing-effect {
+    overflow: hidden;
+    border-right: 2px solid var(--terminal-green);
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: var(--terminal-green);
+    }
+  }
+
+  .pulse-glow {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes pulse {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 20s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20%);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
