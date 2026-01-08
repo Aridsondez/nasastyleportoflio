@@ -5,6 +5,7 @@ import { OrbitControls, useGLTF, Environment, PerspectiveCamera, Html } from '@r
 import { Suspense, useState, useEffect } from 'react';
 import * as THREE from 'three';
 import hotspotsConfig from '@/lib/data/hotspots-config.json';
+import CharacterModel from './CharacterModel';
 
 interface HotspotProps {
   position: [number, number, number];
@@ -123,10 +124,18 @@ function ComputerModel({ onLoad, onMonitorClick }: ComputerModelProps) {
 
   return (
     <group>
+      {/* Computer Lab Model */}
       <primitive
         object={scene}
         scale={1.5}
         position={[0, -1, 0]}
+      />
+
+      {/* Character Model - positioned to the right of the computer */}
+      <CharacterModel
+        position={[2.5, -1, 0]}
+        scale={0.043}
+        rotation={[0, 0, 0]}
       />
 
       {/* Interactive Hotspots - Loaded from JSON config */}
